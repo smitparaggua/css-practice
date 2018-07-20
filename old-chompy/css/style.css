@@ -55,7 +55,19 @@ section p {
 
 .content-block .figure {
   margin: 30px;
-  float: right;
+  float: left;
+  border: 10px solid #fff;
+  overflow: hidden;
+}
+
+.content-block .figure img {
+  float: left;
+  transition: .25s all ease-in-out;
+}
+
+.content-block .figure:hover img,
+.content-block .figure:focus img {
+  transform: rotate(15deg) scale(1.25, 1.25);
 }
 
 .content-block h1 {
@@ -104,4 +116,29 @@ Buttons
   text-align: center;
   font-weight: bold;
   letter-spacing: 1.5px;
+  transition: .25s all linear;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.05, 1.05) translate(0, -5px);
+}
+
+.button-narrow {
+  width: 25%;
+}
+
+.button-alt {
+  color: #fff;
+  border-color: #fff;
+}
+
+::-moz-selection {
+  background-color: #eb2428;
+}
+
+::selection {
+  background-color: #eb2428;
 }
