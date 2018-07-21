@@ -82,8 +82,39 @@ section p {
 }
 
 .intro-content {
-  width: 100%;
-  padding-bottom: 80px;
+  margin-right: 60px;
+  max-width: 840px;
+  float: left
+}
+
+.go-premium {
+  width: 300px;
+  float: left;
+  margin-top: 125px;
+}
+
+.call-to-action {
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: #0072ae;
+  padding: 25px 0;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  transition: all .25s ease-in-out;
+
+  background: #0072ae;
+  background: -webkit-linear-gradient(top, #33d3ff 0%,#00718e 75%);
+  background: linear-gradient(to bottom, #33d3ff 0%,#00718e 75%);
+}
+
+.call-to-action:hover,
+.call-to-action:focus {
+  border-color: #0072ae;
+  color: #0072ae;
+  background: none;
 }
 
 .wave-border {
@@ -133,12 +164,4 @@ Buttons
 .button-alt {
   color: #fff;
   border-color: #fff;
-}
-
-::-moz-selection {
-  background-color: #eb2428;
-}
-
-::selection {
-  background-color: #eb2428;
 }
