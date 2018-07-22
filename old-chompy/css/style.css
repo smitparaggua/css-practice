@@ -10,6 +10,7 @@ h2 {
   font-style: italic;
   color: #eb2428;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #eb2428;
 }
 
 section p {
@@ -82,9 +84,17 @@ section p {
 }
 
 .intro-content {
+  padding-bottom: 80px;
+}
+
+.below-nav {
+  margin-top: 125px;
+}
+
+.beside-go-premium {
   margin-right: 60px;
   max-width: 840px;
-  float: left
+  float: left;
 }
 
 .go-premium {
@@ -164,4 +174,82 @@ Buttons
 .button-alt {
   color: #fff;
   border-color: #fff;
+}
+
+.primary-nav {
+  float: right;
+}
+
+.primary-nav > li {
+  float: left;
+  text-align: center;
+}
+
+.primary-nav > li > a {
+  border-left: 1px solid #ada791;
+}
+
+.primary-nav > li:first-child > a {
+  border-left: none;
+}
+
+nav li a {
+  display: block;
+  padding: 25px 0;
+  width: 150px;
+  color: #766e65;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: 0.15s background-color linear;
+}
+
+nav li a:focus,
+nav li a:hover,
+nav li a.active {
+  background-color: #eb2428;
+  color: #fff;
+}
+
+nav {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+nav figure {
+  position: absolute;
+  top: -20px;
+  left: 50px;
+}
+
+nav img {
+  width: 160px;
+}
+
+.has-submenu ul {
+  position: absolute;
+  background-color: #fff;
+  border-bottom: 1px solid #ada791;
+  border-left: 1px solid #ada791;
+  border-right: 1px solid #ada791;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
+}
+
+.has-submenu:hover ul,
+.has-submenu a:focus + ul {
+  top: initial;
+  left: initial;
+}
+
+.accessibility-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.has-submenu ul a {
+  padding: 18px 0;
 }
