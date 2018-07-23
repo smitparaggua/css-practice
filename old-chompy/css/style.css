@@ -222,10 +222,18 @@ nav figure {
   position: absolute;
   top: -20px;
   left: 50px;
+  animation-name: crazyShark;
+  animation-duration: 1s;
+  animation-timing-function: ease;
 }
 
 nav img {
   width: 160px;
+}
+
+.has-submenu a {
+  position: relative;
+  z-index: 10;
 }
 
 .has-submenu ul {
@@ -236,12 +244,16 @@ nav img {
   border-right: 1px solid #ada791;
   border-radius: 0 0 15px 15px;
   overflow: hidden;
+  z-index: 1;
 }
 
 .has-submenu:hover ul,
 .has-submenu a:focus + ul {
   top: initial;
   left: initial;
+  animation-name: slideDown;
+  animation-duration: 0.25s;
+  animation-timing-function: ease;
 }
 
 .accessibility-hidden {
@@ -252,4 +264,30 @@ nav img {
 
 .has-submenu ul a {
   padding: 18px 0;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes crazyShark {
+  0% {
+    transform: translate(90%, 70%);
+  }
+  33% {
+    transform: translate(40%, 20%) rotate(90deg);
+  }
+  66% {
+    transform: translate(10%);
+  }
+  100% {
+    transform: translate(0%) rotate(0deg);
+  }
 }
