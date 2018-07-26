@@ -51,10 +51,11 @@ section p {
 }
 
 .content-block .figure {
-  margin: 30px;
+  margin: 30px 3.125%;
   float: left;
-  border: 10px solid #fff;
+  border: 15px solid #fff;
   overflow: hidden;
+  width: 23.958333333333%;
 }
 
 .content-block .figure img {
@@ -217,13 +218,10 @@ nav figure {
   position: absolute;
   top: -20px;
   left: 50px;
+  width: 160px;
   animation-name: crazyShark;
   animation-duration: 1s;
   animation-timing-function: ease;
-}
-
-nav img {
-  width: 160px;
 }
 
 .has-submenu a {
