@@ -232,6 +232,11 @@ nav figure {
   margin: 10px 15px 10px 0;
   cursor: pointer;
   display: none;
+  transition: all ease-out 0.35s;
+}
+
+.mobile-menu-icon.open {
+  background-image: url('../images/mobile-menu-close-icon.png');
 }
 
 .has-submenu a {
@@ -342,7 +347,7 @@ nav figure {
 
   .primary-nav li a {
     text-align: right;
-    padding: 15px, 25px, 15px, 0;
+    padding: 15px 25px 15px 0;
     width: 100%;
     border-bottom: 1px solid #e7e7e7;
     border-left: none;
@@ -353,6 +358,10 @@ nav figure {
     width: 100%;
     max-height: 0;
     overflow: hidden;
+  }
+
+  .primary-nav.active {
+    max-height: initial;
   }
 
   nav figure {
@@ -376,5 +385,9 @@ nav figure {
 
   .mobile-menu-icon {
     display: block;
+  }
+
+  .below-nav {
+    margin-top: 50px;
   }
 }
