@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'League Gothic';
+  src: url('../fonts/LeagueGothic-Regular.otf')
+}
+
+h1, h2 {
+  font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+}
+
 h1 {
   font-size: 70px;
   line-height: 1.4;
@@ -15,6 +24,7 @@ h2 {
 
 body {
   background-color: #dcdcdc;
+  font-family: 'Noto Serif', Georgia, 'Times New Roman', sans-serif;
 }
 
 a {
@@ -276,6 +286,30 @@ nav figure {
 
 .minor-desc {
   font-size: 80%;
+}
+
+footer {
+  background: #fff url('../images/seaweed.jpg') repeat-x 0 0;
+  padding: 142px 0;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+footer ul {
+  float: left;
+  margin: 0 100px 50px 0;
+}
+
+footer .list-heading {
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 17px;
+  font-family: 'Maven Pro', Arial, Helvetica, sans-serif;
+}
+
+footer a {
+  color: #333;
 }
 
 @keyframes slideDown {
