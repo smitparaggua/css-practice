@@ -295,6 +295,16 @@ footer {
   line-height: 1.7;
 }
 
+footer i {
+  margin-right: 10px;
+  font-size: 30px;
+  transition: 0.25s color ease-in-out;
+}
+
+footer a:hover i {
+  color: #f00;
+}
+
 footer ul {
   float: left;
   margin: 0 100px 50px 0;
@@ -310,6 +320,21 @@ footer .list-heading {
 
 footer a {
   color: #333;
+}
+
+footer li,
+footer p {
+  color: #4D4D4D;
+  line-height: 30px;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+.legal-copy {
+  text-align: right;
+  font-size: 10px
 }
 
 @keyframes slideDown {
