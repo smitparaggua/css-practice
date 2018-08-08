@@ -44,12 +44,6 @@ section p {
   margin-bottom: 30px;
 }
 
-.secondary-section h2 {
-  font-style: normal;
-  color: #0072ae;
-  font-weight: bold;
-}
-
 .columns {
   display: flex;
   justify-content: space-between;
@@ -60,11 +54,21 @@ section p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .column figure {
-  max-width: 50%;
+  width: 50%;
   flex-basis: 150px;
+}
+
+.column .button {
+  margin-top: auto;
+  width: 90%;
+}
+
+.column h2 {
+  align-self: flex-start;
 }
 
 .content-block .figure {
@@ -343,6 +347,27 @@ footer li {
 .legal-copy {
   text-align: right;
   font-size: 10px
+}
+
+.product-list-item {
+  border-bottom: 1px solid #766e65;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.product-list-item figure {
+  width: 50px;
+}
+
+.product-list-item h2 {
+  margin: 0;
+  flex-basis: 250px;
+}
+
+.product-list-item .button {
+  width: 130px;
+  margin-left: auto;
 }
 
 @keyframes slideDown {
