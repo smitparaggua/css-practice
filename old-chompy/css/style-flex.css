@@ -370,6 +370,29 @@ footer li {
   margin-left: auto;
 }
 
+.featured {
+  padding: 0 0 20px 0;
+  background-color: #d3d3d3;
+  overflow: hidden;
+}
+
+.featured h2,
+.featured p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ribbon {
+  background-color: #ffc0cb;
+  padding: 10px 50px;
+  margin-bottom: 20px;
+  align-self: stretch;
+  text-align: center;
+  font-family: 'Maven Pro', Arial, sans-serif;
+  font-weight: bold;
+  box-shadow: #b7b7b7 0px 2px 15px 0px;
+}
+
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
@@ -470,5 +493,9 @@ footer li {
 
   .columns {
     flex-direction: column;
+  }
+
+  .featured {
+    order: -1;
   }
 }
