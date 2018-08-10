@@ -498,4 +498,23 @@ footer li {
   .featured {
     order: -1;
   }
+
+  .product-list-item {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .product-list-item h2 {
+    flex-basis: auto;
+  }
+
+  .product-list-item .button {
+    margin-left: initial;
+    margin-bottom: 15px;
+    width: 90%;
+  }
+
+  .product-list-item figure {
+    width: 50%;
+  }
 }
